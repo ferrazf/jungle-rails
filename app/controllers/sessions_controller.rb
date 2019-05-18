@@ -6,7 +6,6 @@ class SessionsController < ApplicationController
 
     end
       def create
-        byebug
         # Login successful
         user = User.find_by_email(params[:user][:email])
         # If the user exists AND the password entered is correct.
